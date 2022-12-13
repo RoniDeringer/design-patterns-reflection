@@ -1,29 +1,35 @@
+package reflection;
 
-public class Pessoa {
+public class PessoaController {
 
-	private String nome;
-	private String idade;
+	private String nome = "teste";
+	private int idade = 2;
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getIdade() {
+
+	public int getIdade() {
 		return idade;
 	}
-	public void setIdade(String idade) {
+
+	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Pessoa [nome=");
+		builder.append("PessoaController [nome=");
 		builder.append(nome);
 		builder.append(", idade=");
 		builder.append(idade);
 		builder.append("]");
 		return builder.toString();
 	}
+
 }
